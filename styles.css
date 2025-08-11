@@ -1,7 +1,3 @@
-div {
-    border: 2px black solid;
-}
-
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 
@@ -10,14 +6,32 @@ body {
     flex-wrap: wrap;
     overflow-x: hidden;
     width: 100%;
-    height:100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
     font: 'Roboto';
+}
+
+header {
+    color: #F9FAF8;
+    font-size: 24px;
+}
+
+nav a {
+    font-size: 18px;
+    color: #E5E7EB;
+}
+
+.nav {
+    display: flex;
+    gap: 32px;
 }
 
 .header {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     min-width: 100vw;
+    background-color: #1F2937;
 }
 
 ul {
@@ -30,10 +44,37 @@ a {
     text-decoration: none;
 }
 
+/* hero */
+
 .hero {
     display: flex;
-    flex-direction: column;
+    justify-content: space-around;
+    align-content: center;
+    flex-wrap: wrap;
     min-width: 100vw;
+    padding: 100px;
+    background-color: #1F2937;
+}
+
+.subtext {
+    font-size: 18px;
+    color: #E5E7EB;
+    display: inline-block;
+    margin: 0;
+}
+
+.pcholder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: gray;
+    padding: 150px;
+}
+
+.heroder {
+    font-size: 48px;
+    color: #F9FAF8;
+    font-weight: 900;
 }
 
 button {
@@ -41,13 +82,6 @@ button {
     border-radius: 8px;
 }
 
-.container-ill {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    min-width: 100vw;
-}
 
 .square {
     flex-shrink: 0;
@@ -63,7 +97,7 @@ button {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 35px;
+    gap: 50px;
 }
 
 .sep-con {
@@ -72,24 +106,102 @@ button {
     justify-content: space-between;
 }
 
+/* Information */
+
+.container-ill {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    min-width: 100vw;
+    padding: 25px 100px 175px 100px;
+}
+
+.text {
+    margin-top: -24px;
+}
+
 .title {
     margin: 28px;
+    font-size: 36px;
+    font-weight: 900;
 }
+
+/* Quote */
 
 .quot {
     min-width: 100vw;
     display: flex;
     justify-content: center;
     align-content: center;
+    background-color: #E5E7EB;
+    padding: 100px;
+    flex-wrap: wrap;
 }
+
+.quot p {
+    font-size: 36px;
+    font: italic lighter;
+    color: #1F2937;
+}
+
+.thor {
+    color: #1F2937;
+    font-weight: 700;
+    margin-top: -40px;
+}
+
+/* Call To Action */
 
 .call {
     min-width: 100vw;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
 }
 
+.call p {
+    color: #F9FAF8;
+}
+
+.cta-head {
+    font-weight: 900;
+    font-size: 24px;
+}
+
+.cta-card {
+    background-color: #3882F6;
+    padding: 40px 250px;
+    border-radius: 8px;
+}
+
+.cta-btm {
+    display: flex;
+    justify-content: space-between;
+    margin-top: -35px;
+    gap: 250px;
+}
+
+.cta-btn {
+    background-color: #3882F6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px white solid;
+    border-radius: 8px;
+    color: white;
+    padding: 2px 24px 2px 24px;
+}
+
+/* Footer */
+
 .footer {
-    flex-grow: 1;
+    padding: 50px;
     min-width: 100vw;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1F2937;
+    color: white;
 }
